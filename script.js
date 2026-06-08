@@ -370,3 +370,5 @@ if (eyebrow) {
   const type = () => { if (i < orig.length) { eyebrow.textContent += orig[i++]; setTimeout(type, 36); } };
   setTimeout(type, 500);
 }
+
+
