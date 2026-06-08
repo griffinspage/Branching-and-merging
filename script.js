@@ -372,3 +372,88 @@ if (eyebrow) {
 }
 
 
+// Team page 
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+document
+.querySelectorAll(".stat-card, .impact-card, .tl-item")
+.forEach(item => observer.observe(item));
+
+
+// Mobile Menu
+function toggleMenu(){
+  document
+  .querySelector(".nav-links")
+  .classList.toggle("open");
+}
+
+
+// Counter Animation
+const counters = document.querySelectorAll(".counter");
+
+const runCounter = (counter) => {
+
+  const target = Number(counter.dataset.target);
+
+  let current = 0;
+
+  const step = target / 100;
+
+  const timer = setInterval(() => {
+
+    current += step;
+
+    if(current >= target){
+      current = target;
+      clearInterval(timer);
+    }
+
+    if(target >= 1000000){
+      counter.textContent =
+      (current / 1000000).toFixed(1) + "M";
+    }
+    else if(target >= 1000){
+      counter.textContent =
+      (current / 1000).toFixed(0) + "K";
+    }
+    else{
+      counter.textContent =
+      Math.floor(current);
+    }
+
+  }, 20);
+};
+
+const statObserver = new IntersectionObserver(entries => {
+
+  entries.forEach(entry => {
+
+    if(entry.isIntersecting){
+
+      const counter =
+      entry.target.querySelector(".counter");
+
+      if(counter && !counter.classList.contains("started")){
+
+        counter.classList.add("started");
+
+        runCounter(counter);
+      }
+
+    }
+
+  });
+
+}, {threshold:0.5});
+
+document.querySelectorAll(".stat-card")
+.forEach(card => statObserver.observe(card));
