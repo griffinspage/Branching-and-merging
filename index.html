@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EarthKeep — Conservation in Action</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <span class="logo-leaf">&#9752;</span>
+      <span class="logo-text">EarthKeep</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#join" class="nav-cta">Get Involved</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+<section class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="noise-overlay"></div>
+    <div class="hero-content">
+        <p class="hero-eyebrow">Global Conservation Initiative · Est. 2011</p>
+        <h1 class="hero-title">
+            We Fight for the<br />
+            <em>World's Last Wild Places</em>
+        </h1>
+        <p class="hero-sub">
+            EarthKeep mobilises scientists, communities, and governments to protect biodiversity,
+            restore ecosystems, and secure a living planet for generations to come.
+        </p>
+        <div class="hero-actions">
+            <a href="#join" class="btn btn-primary">Join the Movement</a>
+            <a href="#programs" class="btn btn-ghost">Explore Our Work</a>
+        </div>
+    </div>
+    <div class="hero-stats-bar">
+        <div class="stat">
+            <span class="stat-num">4.2M</span>
+            <span class="stat-label">Hectares Protected</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+            <span class="stat-num">38</span>
+            <span class="stat-label">Countries Active</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+            <span class="stat-num">620K</span>
+            <span class="stat-label">Trees Planted</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+            <span class="stat-num">1,800+</span>
+            <span class="stat-label">Species Monitored</span>
+        </div>
+    </div>
+</section>
+
+  <!-- MISSION -->
+  <section class="mission" id="mission">
+    <div class="mission-inner">
+      <div class="section-tag">Our Mission</div>
+      <div class="mission-split">
+        <div class="mission-text">
+          <h2 class="section-title">Nature is the foundation.<br /><em>We are its architects.</em></h2>
+          <p>
+            EarthKeep was founded on a simple belief: that every ecosystem on Earth has intrinsic value, 
+            and that protecting biodiversity is not a luxury — it is a civilisational imperative. 
+            We work at the intersection of science, policy, and community action to halt habitat destruction, 
+            combat invasive species, and reverse the tide of species extinction.
+          </p>
+          <p>
+            Our approach is holistic. We don't just plant trees and walk away. We build long-term partnerships 
+            with indigenous communities, fund rigorous field research, and advocate for binding conservation 
+            legislation at national and international levels.
+          </p>
+          <a href="#programs" class="text-link">Discover our programmes →</a>
+        </div>
+        <div class="mission-visual">
+          <div class="eco-card">
+            <div class="eco-icon">🌿</div>
+            <h4>Ecosystem Restoration</h4>
+            <p>Rehabilitating degraded forests, wetlands, and grasslands through science-led interventions.</p>
+          </div>
+          <div class="eco-card">
+            <div class="eco-icon">🦁</div>
+            <h4>Wildlife Protection</h4>
+            <p>Anti-poaching operations and habitat corridors safeguarding endangered megafauna and keystone species.</p>
+          </div>
+          <div class="eco-card">
+            <div class="eco-icon">🌊</div>
+            <h4>Marine Conservation</h4>
+            <p>Establishing Marine Protected Areas and supporting sustainable fishing practices in coastal communities.</p>
+          </div>
+          <div class="eco-card">
+            <div class="eco-icon">🧬</div>
+            <h4>Biodiversity Research</h4>
+            <p>Field studies, genetic tracking, and satellite monitoring to understand species at risk.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="programs" id="programs">
+    <div class="programs-inner">
+      <div class="section-tag light">Active Programmes</div>
+      <h2 class="section-title light">On the Ground,<br /><em>Right Now</em></h2>
+      <div class="programs-grid">
+        <div class="program-card large">
+          <div class="program-badge">Flagship</div>
+          <h3>The Great Rift Restoration</h3>
+          <p class="program-meta">East Africa · 2019 – Present</p>
+          <p>Working across Kenya, Tanzania, and Uganda to restore over 200,000 hectares of savannah woodland, 
+          reintroduce native grasses, and support pastoral communities in sustainable land management.</p>
+          <div class="program-tags">
+            <span>Savannah</span><span>Community-led</span><span>Carbon Credits</span>
+          </div>
+        </div>
+        <div class="program-card">
+          <h3>Amazon Canopy Watch</h3>
+          <p class="program-meta">South America · 2015 – Present</p>
+          <p>Real-time satellite monitoring of deforestation fronts and rapid-response legal interventions in partnership with Brazilian environmental agencies.</p>
+          <div class="program-tags"><span>Rainforest</span><span>Remote Sensing</span></div>
+        </div>
+        <div class="program-card">
+          <h3>Coral Triangle Initiative</h3>
+          <p class="program-meta">Southeast Asia · 2017 – Present</p>
+          <p>Reef restoration, bleaching monitoring, and community-run no-take zones across six island nations — protecting 30% of the world's coral reefs.</p>
+          <div class="program-tags"><span>Marine</span><span>Reef Restoration</span></div>
+        </div>
+        <div class="program-card">
+          <h3>Northern Boreal Shield</h3>
+          <p class="program-meta">Canada & Scandinavia · 2021 – Present</p>
+          <p>Protecting intact boreal forests — the world's largest land carbon sink — from industrial logging through legal designation and indigenous stewardship agreements.</p>
+          <div class="program-tags"><span>Boreal</span><span>Carbon Sink</span></div>
+        </div>
+        <div class="program-card">
+          <h3>Urban Rewilding Labs</h3>
+          <p class="program-meta">Global Cities · 2022 – Present</p>
+          <p>Transforming urban spaces into functional wildlife habitats — pollinator corridors, native plantings, and urban wetlands — in partnership with 14 city governments.</p>
+          <div class="program-tags"><span>Urban</span><span>Pollinators</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="impact" id="impact">
+    <div class="impact-inner">
+      <div class="section-tag">Our Impact</div>
+      <h2 class="section-title">Numbers That<br /><em>Tell the Story</em></h2>
+      <div class="impact-grid">
+        <div class="impact-item">
+          <div class="impact-circle">
+            <span class="impact-big">87%</span>
+          </div>
+          <p>of our restored sites show measurable increase in native species populations within 5 years</p>
+        </div>
+        <div class="impact-item">
+          <div class="impact-circle amber">
+            <span class="impact-big">3.1M</span>
+          </div>
+          <p>tonnes of CO₂ sequestered annually through our forest and wetland programmes</p>
+        </div>
+        <div class="impact-item">
+          <div class="impact-circle teal">
+            <span class="impact-big">$240M</span>
+          </div>
+          <p>in conservation financing mobilised from governments, philanthropies, and carbon markets</p>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline">
+        <div class="timeline-title">Milestones</div>
+        <div class="timeline-track">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2011</div>
+            <div class="tl-desc">EarthKeep founded in Nairobi with a team of 12 conservationists and a mandate to protect East African ecosystems.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2014</div>
+            <div class="tl-desc">First Marine Protected Area established in the Lamu Archipelago, Kenya — protecting 45,000 sq km of ocean.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2017</div>
+            <div class="tl-desc">Expanded to 20 countries; launched the Global Species Monitoring Network with 140 partner universities.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2020</div>
+            <div class="tl-desc">Landmark 1 million hectares protected milestone. Received UN Environment Programme Award for Excellence.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2024</div>
+            <div class="tl-desc">Partnered with 38 national governments on the Global Biodiversity Framework implementation strategy.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="team-inner">
+      <div class="section-tag light">The People</div>
+      <h2 class="section-title light">Driven by Passion,<br /><em>Guided by Science</em></h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar" style="background: #2d6a4f;">AO</div>
+          <h4>Dr. Amara Osei</h4>
+          <p class="team-role">Executive Director</p>
+          <p class="team-bio">Wildlife ecologist with 20+ years in African savannah conservation. Former IUCN Species Survival Commission chair.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background: #1b4332;">LR</div>
+          <h4>Luisa Restrepo</h4>
+          <p class="team-role">Director of Forest Programmes</p>
+          <p class="team-bio">Environmental lawyer and forest campaigner who led landmark legal victories protecting 800,000 ha of Colombian cloud forest.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background: #40916c;">KT</div>
+          <h4>Dr. Kenji Tanaka</h4>
+          <p class="team-role">Chief Science Officer</p>
+          <p class="team-bio">Marine biologist and reef ecologist. Architect of the Coral Triangle Initiative and author of 60+ peer-reviewed papers.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background: #52b788;">FM</div>
+          <h4>Fatima Moussa</h4>
+          <p class="team-role">Community Engagement Lead</p>
+          <p class="team-bio">Specialist in indigenous-led conservation models across the Sahel. Speaks six languages and works with 80+ community groups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="quotes">
+    <div class="quotes-inner">
+      <blockquote class="featured-quote">
+        "EarthKeep doesn't just come in and plant trees — they sit with communities for years. 
+        That's why the forests are still standing long after other organisations have left."
+        <cite>— Chief Nkosi Dlamini, Conservation Partner, KwaZulu-Natal</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section class="join" id="join">
+    <div class="join-inner">
+      <div class="section-tag">Take Action</div>
+      <h2 class="section-title">The Planet Needs<br /><em>You. Now.</em></h2>
+      <p class="join-sub">There are many ways to contribute — whether you're an individual, a company, a researcher, or a government body. Every action counts.</p>
+      <div class="join-cards">
+        <div class="join-option">
+          <div class="join-icon">💚</div>
+          <h4>Donate</h4>
+          <p>Fund field programmes directly. 91% of donations reach the ground. Monthly giving amplifies your impact.</p>
+          <a href="#" class="btn btn-primary small">Give Today</a>
+        </div>
+        <div class="join-option highlight">
+          <div class="join-icon">🌱</div>
+          <h4>Volunteer</h4>
+          <p>Join a field expedition, contribute skills remotely, or organise a local chapter. No experience necessary — just commitment.</p>
+          <a href="#" class="btn btn-primary small">Apply Now</a>
+        </div>
+        <div class="join-option">
+          <div class="join-icon">🤝</div>
+          <h4>Partner</h4>
+          <p>Corporations, foundations, and institutions — let's build a conservation strategy that aligns with your values and amplifies your ESG commitments.</p>
+          <a href="#" class="btn btn-outline small">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter">
+        <p class="newsletter-label">Stay informed. No spam, ever.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="your@email.com" />
+          <button type="button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-leaf">&#9752;</span>
+        <span class="logo-text">EarthKeep</span>
+        <p>Protecting wild places and wild lives since 2011.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Organisation</h5>
+          <a href="#">About Us</a>
+          <a href="#">Annual Reports</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="footer-col">
+          <h5>Programmes</h5>
+          <a href="#">Forest</a>
+          <a href="#">Marine</a>
+          <a href="#">Wildlife</a>
+          <a href="#">Urban</a>
+        </div>
+        <div class="footer-col">
+          <h5>Get Involved</h5>
+          <a href="#">Donate</a>
+          <a href="#">Volunteer</a>
+          <a href="#">Corporate Partners</a>
+          <a href="#">Schools</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="#">info@earthkeep.org</a>
+          <a href="#">+254 20 400 1234</a>
+          <a href="#">Nairobi, Kenya</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 EarthKeep Conservation Initiative · Registered NGO · All rights reserved</p>
+      <div class="footer-socials">
+        <a href="#">Twitter</a> · <a href="#">Instagram</a> · <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
