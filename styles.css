@@ -675,10 +675,7 @@ p { margin-bottom: 1rem; color: var(--text-muted); }
 
 
 
-
 /* Impact Page */
-
-
 /* ===== VARIABLES ===== */
 :root {
   --green-deep: #1b4332;
@@ -1254,8 +1251,6 @@ a { text-decoration: none; color: inherit; }
   .species-grid { grid-template-columns: 1fr; }
   .testimonial-card { padding: 2rem 1.5rem; }
 }
-
-
 
 /* team styling */
 .impact-hero{
